@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practical guides and honest advice on in-home care, spinal cord injury support, NDIS planning and accessible living in Perth WA — from Dora Health &amp; Wellbeing.">
+  <title>News &amp; Insights | Dora Health &amp; Wellbeing</title>
+  <link rel="icon" type="image/png" href="assets/00-universal/00-brand-favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{gold:'#aa9144','gold-dk':'#8e7424',warm:'#f4f1ec',beige:'#eddba5',brand:'#1e1c18'},fontFamily:{sans:['Inter','sans-serif'],serif:['Playfair Display','serif']}}}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="css/dora.css" rel="stylesheet">
+  <script src="js/dora-motion.js?v=4" defer></script>
+</head>
+<body class="font-sans text-stone-700">
+<header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+
+      <!-- Logo + Brand Text -->
+      <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
+        <img src="assets/01-navbar/01-navbar-logo-150x150.png" alt="Dora Health & Wellbeing" class="h-12 w-auto">
+        <div class="hidden sm:block">
+          <div class="font-serif text-brand text-base font-semibold leading-tight">Dora Health</div>
+          <div class="text-xs text-gold tracking-wider uppercase">&amp; Wellbeing</div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-1" aria-label="Main navigation">
+        <a href="team.html" class="px-4 py-2 text-sm font-medium text-stone-700 hover:text-gold transition-colors">Team</a>
+
+        <!-- Services Dropdown -->
+        <div class="relative group">
+          <a href="services.html" class="px-4 py-2 text-sm font-medium text-stone-700 hover:text-gold transition-colors flex items-center gap-1">
+            Services <i class="fas fa-chevron-down text-xs"></i>
+          </a>
+          <div class="absolute top-full left-0 w-52 bg-white shadow-xl rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 mt-1">
+            <a href="services.html#everyday-support"  class="block px-4 py-2.5 text-sm text-stone-700 hover:bg-warm hover:text-gold">In-Home Support</a>
+            <a href="services.html#spinal-care"       class="block px-4 py-2.5 text-sm text-stone-700 hover:bg-warm hover:text-gold">Spinal Injury Care</a>
+            <a href="services.html#medication-mgmt"   class="block px-4 py-2.5 text-sm text-stone-700 hover:bg-warm hover:text-gold">Medication Management</a>
+            <a href="services.html#holistic-wellbeing" class="block px-4 py-2.5 text-sm text-stone-700 hover:bg-warm hover:text-gold">Mental Wellbeing</a>
+            <a href="services.html#wellness-care"     class="block px-4 py-2.5 text-sm text-stone-700 hover:bg-warm hover:text-gold">Personal Care</a>
+          </div>
+        </div>
+
+        <a href="testimonial.html" class="px-4 py-2 text-sm font-medium text-stone-700 hover:text-gold transition-colors">Testimonials</a>
+        <a href="blog.html" class="px-4 py-2 text-sm font-600 text-gold border-b-2 border-gold hover:text-gold transition-colors">News</a>
+        <a href="contact.html" class="ml-4 btn-gold text-sm py-2.5 px-6">Contact Us</a>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-btn" class="md:hidden p-2 rounded-lg text-stone-700 hover:bg-warm" aria-label="Open menu">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-menu" class="md:hidden bg-white border-t border-stone-100 px-4 pb-4">
+    <a href="team.html"        class="block py-3 text-sm text-stone-700 border-b border-stone-100">Team</a>
+    <a href="services.html"    class="block py-3 text-sm text-stone-700 border-b border-stone-100">Services</a>
+    <a href="testimonial.html" class="block py-3 text-sm text-stone-700 border-b border-stone-100">Testimonials</a>
+    <a href="blog.html" class="block py-3 text-sm text-stone-700 border-b border-stone-100">News</a>
+    <a href="contact.html"     class="block mt-4 btn-gold text-center text-sm">Contact Us</a>
+  </div>
+</header>
+<main class="pt-20">
+<section class="hero-section pattern-bg relative overflow-hidden pt-20">
+  <div class="absolute inset-0 bg-white/65"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="dm-hero-left">
+        <span class="section-label">News &amp; Insights</span>
+        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-brand leading-tight mt-2 mb-6">Care Worth<br><span class="text-gold italic">Reading About</span></h1>
+        <p class="text-stone-600 text-lg md:text-xl leading-relaxed max-w-xl">Practical guides, local know-how and honest advice for people living with disability in Perth — and the people who love them.</p>
+      </div>
+      <div class="dm-hero-right flex justify-center items-center">
+        <div class="relative">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-64 h-64 md:w-[360px] md:h-[360px] bg-beige/40 rounded-full blur-2xl"></div>
+          </div>
+          <img src="assets/07-about/07-about-photo-event-booth-1440x1440.jpg"
+               alt="Dora Health & Wellbeing out in the Perth community"
+               class="relative z-10 rounded-3xl shadow-soft w-full max-w-md object-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-20 bg-warm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <a href="news-choosing-the-right-support-worker-perth.html" class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-[0_24px_55px_-18px_rgba(60,50,30,.35)] transition-all duration-500 hover:-translate-y-1 border border-gold/10 flex flex-col p-7 group">
+        <span class="text-gold text-xs font-semibold uppercase tracking-widest mb-3">Care &amp; Support</span>
+        <h2 class="font-serif text-xl text-brand mb-3 leading-snug group-hover:text-gold transition-colors">Choosing the Right Support Worker in Perth: What Really Matters</h2>
+        <p class="text-stone-500 text-sm leading-relaxed flex-1">The right support worker becomes part of your daily rhythm. Here is how to find someone who fits your life, not just your roster.</p>
+        <span class="mt-5 text-sm font-medium text-gold">Read article <i class="fas fa-arrow-right text-xs ml-1"></i></span>
+      </a>
+      <a href="news-understanding-spinal-cord-injury-support-needs.html" class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-[0_24px_55px_-18px_rgba(60,50,30,.35)] transition-all duration-500 hover:-translate-y-1 border border-gold/10 flex flex-col p-7 group">
+        <span class="text-gold text-xs font-semibold uppercase tracking-widest mb-3">Care &amp; Support</span>
+        <h2 class="font-serif text-xl text-brand mb-3 leading-snug group-hover:text-gold transition-colors">Understanding Spinal Cord Injury Support Needs: A Guide for Families</h2>
+        <p class="text-stone-500 text-sm leading-relaxed flex-1">Spinal cord injury affects every family differently. This guide explains the common areas of support and how good care protects both health and independence.</p>
+        <span class="mt-5 text-sm font-medium text-gold">Read article <i class="fas fa-arrow-right text-xs ml-1"></i></span>
+      </a>
+      <a href="news-accessible-beaches-perth-wheelchair-days-out.html" class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-[0_24px_55px_-18px_rgba(60,50,30,.35)] transition-all duration-500 hover:-translate-y-1 border border-gold/10 flex flex-col p-7 group">
+        <span class="text-gold text-xs font-semibold uppercase tracking-widest mb-3">Community &amp; Lifestyle</span>
+        <h2 class="font-serif text-xl text-brand mb-3 leading-snug group-hover:text-gold transition-colors">Accessible Beaches in Perth: Planning a Great Wheelchair-Friendly Day Out</h2>
+        <p class="text-stone-500 text-sm leading-relaxed flex-1">The ocean belongs to everyone. Here is how to plan a wheelchair-accessible beach day in Perth, from beach wheelchairs to timing and support.</p>
+        <span class="mt-5 text-sm font-medium text-gold">Read article <i class="fas fa-arrow-right text-xs ml-1"></i></span>
+      </a>
+      <a href="news-ndis-plan-tips-getting-the-most-from-your-plan.html" class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-[0_24px_55px_-18px_rgba(60,50,30,.35)] transition-all duration-500 hover:-translate-y-1 border border-gold/10 flex flex-col p-7 group">
+        <span class="text-gold text-xs font-semibold uppercase tracking-widest mb-3">NDIS &amp; Planning</span>
+        <h2 class="font-serif text-xl text-brand mb-3 leading-snug group-hover:text-gold transition-colors">Getting the Most from Your NDIS Plan: Practical Tips for Perth Participants</h2>
+        <p class="text-stone-500 text-sm leading-relaxed flex-1">Your NDIS plan works hardest when it reflects your real life. These practical tips help Perth participants prepare, spend wisely and review with confidence.</p>
+        <span class="mt-5 text-sm font-medium text-gold">Read article <i class="fas fa-arrow-right text-xs ml-1"></i></span>
+      </a>
+      <a href="news-dignity-in-personal-care-what-it-looks-like.html" class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-[0_24px_55px_-18px_rgba(60,50,30,.35)] transition-all duration-500 hover:-translate-y-1 border border-gold/10 flex flex-col p-7 group">
+        <span class="text-gold text-xs font-semibold uppercase tracking-widest mb-3">Care &amp; Support</span>
+        <h2 class="font-serif text-xl text-brand mb-3 leading-snug group-hover:text-gold transition-colors">Dignity in Personal Care: What It Looks Like and Why It Matters</h2>
+        <p class="text-stone-500 text-sm leading-relaxed flex-1">Personal care is intimate work. Here is what dignity actually looks like in practice, and the standard you should expect from any Perth care provider.</p>
+        <span class="mt-5 text-sm font-medium text-gold">Read article <i class="fas fa-arrow-right text-xs ml-1"></i></span>
+      </a>
+      <a href="news-pressure-injury-prevention-basics.html" class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-[0_24px_55px_-18px_rgba(60,50,30,.35)] transition-all duration-500 hover:-translate-y-1 border border-gold/10 flex flex-col p-7 group">
+        <span class="text-gold text-xs font-semibold uppercase tracking-widest mb-3">Health &amp; Wellbeing</span>
+        <h2 class="font-serif text-xl text-brand mb-3 leading-snug group-hover:text-gold transition-colors">Pressure Injury Prevention: The Basics Everyone Should Know</h2>
+        <p class="text-stone-500 text-sm leading-relaxed flex-1">Pressure injuries are largely preventable with daily habits. Learn the basics of skin checks, pressure relief and equipment that protect long-term health.</p>
+        <span class="mt-5 text-sm font-medium text-gold">Read article <i class="fas fa-arrow-right text-xs ml-1"></i></span>
+      </a>
+      <a href="news-carer-family-wellbeing-looking-after-yourself.html" class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-[0_24px_55px_-18px_rgba(60,50,30,.35)] transition-all duration-500 hover:-translate-y-1 border border-gold/10 flex flex-col p-7 group">
+        <span class="text-gold text-xs font-semibold uppercase tracking-widest mb-3">Health &amp; Wellbeing</span>
+        <h2 class="font-serif text-xl text-brand mb-3 leading-snug group-hover:text-gold transition-colors">Looking After Yourself: Wellbeing for Family Carers</h2>
+        <p class="text-stone-500 text-sm leading-relaxed flex-1">Caring for someone you love is meaningful — and demanding. Here is how family carers can protect their own health without guilt.</p>
+        <span class="mt-5 text-sm font-medium text-gold">Read article <i class="fas fa-arrow-right text-xs ml-1"></i></span>
+      </a>
+      <a href="news-home-modifications-daily-living-aids-guide.html" class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-[0_24px_55px_-18px_rgba(60,50,30,.35)] transition-all duration-500 hover:-translate-y-1 border border-gold/10 flex flex-col p-7 group">
+        <span class="text-gold text-xs font-semibold uppercase tracking-widest mb-3">NDIS &amp; Planning</span>
+        <h2 class="font-serif text-xl text-brand mb-3 leading-snug group-hover:text-gold transition-colors">Home Modifications and Daily Living Aids: Making Home Work for You</h2>
+        <p class="text-stone-500 text-sm leading-relaxed flex-1">The right modifications and aids turn a house you manage around into a home that works for you. Here is where to start, and how funding fits in.</p>
+        <span class="mt-5 text-sm font-medium text-gold">Read article <i class="fas fa-arrow-right text-xs ml-1"></i></span>
+      </a>
+      <a href="news-community-participation-overcoming-isolation.html" class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-[0_24px_55px_-18px_rgba(60,50,30,.35)] transition-all duration-500 hover:-translate-y-1 border border-gold/10 flex flex-col p-7 group">
+        <span class="text-gold text-xs font-semibold uppercase tracking-widest mb-3">Community &amp; Lifestyle</span>
+        <h2 class="font-serif text-xl text-brand mb-3 leading-snug group-hover:text-gold transition-colors">Community Participation: Practical Ways to Push Back Against Isolation</h2>
+        <p class="text-stone-500 text-sm leading-relaxed flex-1">Connection is a health need, not a nice-to-have. Practical, low-pressure ways to rebuild community life in Perth after disability changes things.</p>
+        <span class="mt-5 text-sm font-medium text-gold">Read article <i class="fas fa-arrow-right text-xs ml-1"></i></span>
+      </a>
+      <a href="news-travelling-with-a-disability-in-wa.html" class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-[0_24px_55px_-18px_rgba(60,50,30,.35)] transition-all duration-500 hover:-translate-y-1 border border-gold/10 flex flex-col p-7 group">
+        <span class="text-gold text-xs font-semibold uppercase tracking-widest mb-3">Community &amp; Lifestyle</span>
+        <h2 class="font-serif text-xl text-brand mb-3 leading-snug group-hover:text-gold transition-colors">Travelling with a Disability in WA: Planning Trips That Actually Work</h2>
+        <p class="text-stone-500 text-sm leading-relaxed flex-1">Western Australia rewards the traveller — and with good planning, disability does not have to keep you home. Here is how to plan a WA trip that works.</p>
+        <span class="mt-5 text-sm font-medium text-gold">Read article <i class="fas fa-arrow-right text-xs ml-1"></i></span>
+      </a>
+      <a href="news-what-makes-quality-in-home-nursing-care.html" class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-[0_24px_55px_-18px_rgba(60,50,30,.35)] transition-all duration-500 hover:-translate-y-1 border border-gold/10 flex flex-col p-7 group">
+        <span class="text-gold text-xs font-semibold uppercase tracking-widest mb-3">Care &amp; Support</span>
+        <h2 class="font-serif text-xl text-brand mb-3 leading-snug group-hover:text-gold transition-colors">What Makes Quality In-Home Nursing Care? A Nurse&#x27;s Perspective</h2>
+        <p class="text-stone-500 text-sm leading-relaxed flex-1">Not all in-home care is equal. Here is what genuine quality looks like in community nursing and complex care — and the questions that reveal it.</p>
+        <span class="mt-5 text-sm font-medium text-gold">Read article <i class="fas fa-arrow-right text-xs ml-1"></i></span>
+      </a>
+      <a href="news-catheter-care-routine-explained.html" class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-[0_24px_55px_-18px_rgba(60,50,30,.35)] transition-all duration-500 hover:-translate-y-1 border border-gold/10 flex flex-col p-7 group">
+        <span class="text-gold text-xs font-semibold uppercase tracking-widest mb-3">Health &amp; Wellbeing</span>
+        <h2 class="font-serif text-xl text-brand mb-3 leading-snug group-hover:text-gold transition-colors">What Is a Catheter Care Routine? A Plain-English Guide</h2>
+        <p class="text-stone-500 text-sm leading-relaxed flex-1">Catheter care sounds daunting at first, but it quickly becomes routine. Here is a plain-English overview of what good catheter care involves.</p>
+        <span class="mt-5 text-sm font-medium text-gold">Read article <i class="fas fa-arrow-right text-xs ml-1"></i></span>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="bg-stone-900 text-stone-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+
+      <!-- Brand -->
+      <div>
+        <img src="assets/01-navbar/01-navbar-logo-150x150.png" alt="Dora Health & Wellbeing" class="h-12 mb-4 opacity-80">
+        <p class="text-sm leading-relaxed text-stone-400">Perth's In-Home Care Specialists.<br>Compassionate. Dignified. Personalised.</p>
+      </div>
+
+      <!-- Address -->
+      <div>
+        <h3 class="text-white font-semibold uppercase text-xs tracking-widest mb-4">Contact</h3>
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-start gap-2"><i class="fas fa-map-marker-alt text-gold mt-1"></i> 22B Chesterfield Avenue, Hocking WA</li>
+          <li class="flex items-center gap-2"><i class="fas fa-phone text-gold"></i> <a href="tel:0438335050" class="footer-link hover:text-gold">0438 335 050</a></li>
+          <li class="flex items-center gap-2"><i class="fas fa-envelope text-gold"></i> <a href="mailto:info@dorahealth.com.au" class="footer-link hover:text-gold">info@dorahealth.com.au</a></li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div>
+        <h3 class="text-white font-semibold uppercase text-xs tracking-widest mb-4">Follow Us</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="https://www.facebook.com/people/Dora-Health-Wellbeing/61577910100130/" target="_blank" rel="noopener" class="footer-link flex items-center gap-2 hover:text-gold"><i class="fab fa-facebook text-gold w-4"></i> Facebook</a></li>
+          <li><a href="https://www.instagram.com/dora_health/" target="_blank" rel="noopener" class="footer-link flex items-center gap-2 hover:text-gold"><i class="fab fa-instagram text-gold w-4"></i> Instagram</a></li>
+          <li><a href="#" class="footer-link flex items-center gap-2 hover:text-gold"><i class="fab fa-linkedin text-gold w-4"></i> LinkedIn</a></li>
+          <li><a href="https://maps.app.goo.gl/9Zp7y2n5u9vP9XqZA" target="_blank" class="footer-link flex items-center gap-2 hover:text-gold"><i class="fab fa-google text-gold w-4"></i> Google My Business</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-stone-700 pt-6 text-center text-xs text-stone-500 space-y-3">
+      <div>&copy; 2025 Dora Health and Wellbeing Pty Ltd &middot; ABN 71 684 687 901</div>
+      <div>Supporting NDIS participants (self-managed &amp; plan-managed) across Perth &amp; the South West</div>
+      <div class="flex justify-center items-center gap-2 flex-wrap">
+        <a href="privacy.html" class="hover:text-gold transition-colors">Privacy Policy</a><span>&middot;</span>
+        <a href="terms.html" class="hover:text-gold transition-colors">Terms of Service</a><span>&middot;</span>
+        <a href="blog.html" class="hover:text-gold transition-colors">News</a>
+        <a href="brand.html" aria-label="Dora brand kit" title="" class="ml-2 opacity-25 hover:opacity-80 transition-opacity"><img src="assets/00-universal/00-brand-icon-lotus-1563x1563.png" alt="" class="h-4 w-4 invert"></a>
+      </div>
+      <div class="pt-1">Site by <a href="#" class="font-semibold tracking-widest text-stone-400 hover:text-gold transition-colors" rel="noopener">TDC</a></div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('menu-btn').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  });
+</script>
+</body>
+</html>

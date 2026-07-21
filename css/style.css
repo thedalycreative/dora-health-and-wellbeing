@@ -325,7 +325,7 @@ label { font-weight: normal; }
 
 .cta-section { 
     padding-top: 140px; padding-bottom: 140px; 
-    background: linear-gradient(rgba(30, 28, 24, 0.8), rgba(30, 28, 24, 0.8)), rgba(30, 28, 24, 0.8) url(../images/cta-section-img.jpg) no-repeat center; background-size: cover; }
+    background: linear-gradient(rgba(30, 28, 24, 0.8), rgba(30, 28, 24, 0.8)), rgba(30, 28, 24, 0.8) url(../assets/placeholders/cta-section-img.jpg) no-repeat center; background-size: cover; }
 .cta-title { font-size: 36px; color: #fff; line-height: 58px; font-weight: 600; margin-bottom: 10px; letter-spacing: -1px; }
 .cta-text { font-size: 18px; color: #fff; margin-bottom: 30px; }
 
@@ -378,13 +378,13 @@ label { font-weight: normal; }
 }
 
 .pattern-bg {
-    background-image: url('../images/dora-background.png');
+    background-image: url('../assets/00-universal/00-brand-pattern-beige-1024x1024.png');
     background-repeat: repeat;
     background-size: 400px;
 }
 
 .hero-pattern {
-    background-image: url('../images/dora-background.png');
+    background-image: url('../assets/00-universal/00-brand-pattern-beige-1024x1024.png');
     background-repeat: repeat;
     background-size: 300px;
     opacity: 0.6;
@@ -484,7 +484,7 @@ label { font-weight: normal; }
 /*----------------------------------------------
     5.4 Page Header
 ----------------------------------------------*/
-.page-header { background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(../images/dora-header-raw.png) no-repeat center; background-size: cover; margin: 0; border-bottom: none; padding-bottom: 0px; }
+.page-header { background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(../assets/placeholders/missing-header-1900x350.svg) no-repeat center; background-size: cover; margin: 0; border-bottom: none; padding-bottom: 0px; }
 .page-caption { padding: 120px 0px; position: relative; z-index: 1; color: #fff; text-align: center; }
 .page-title { color: #fff;  font-size: 40px; font-weight: 400; letter-spacing: -1px; }
 .page-breadcrumb .breadcrumb { background-color: transparent; margin-bottom: 0px; font-size: 12px; text-transform: uppercase; }
@@ -610,7 +610,7 @@ address { margin-bottom: 20px; font-style: normal; line-height: 1.42857143; }
 .meta-date, .meta-author, .meta-comment, .meta-cat { display: inline-block; margin-right: 10px; }
 
 .post-type { position: relative; }
-.post-sticky { background: url(../images/sticky.png) no-repeat; position: absolute; right: 35px; bottom: 35px; width: 30px; height: 30px; color: #fff; }
+.post-sticky { background: url(../assets/placeholders/missing-sticky-150x60.svg) no-repeat; position: absolute; right: 35px; bottom: 35px; width: 30px; height: 30px; color: #fff; }
 .post-quote {background-color: #aa9144; }
 .post-quote blockquote{color: #fff; font-size: 34px; line-height: 42px;}
 /*-------- Related Post --------*/
@@ -703,7 +703,7 @@ address { margin-bottom: 20px; font-style: normal; line-height: 1.42857143; }
 /*--------------------------------
  Extra Plugin CSS - Back to top  
 ---------------------------------*/
-.cd-top { display: inline-block; height: 40px; width: 40px; position: fixed; bottom: 40px; right: 10px; overflow: hidden; text-indent: 100%; white-space: nowrap; background: rgba(212, 27, 44, 100) url(../images/cd-top-arrow.svg) no-repeat center 50%; visibility: hidden; opacity: 0; -webkit-transition: opacity .3s 0s, visibility 0s .3s; -moz-transition: opacity .3s 0s, visibility 0s .3s; transition: opacity .3s 0s, visibility 0s .3s; }
+.cd-top { display: inline-block; height: 40px; width: 40px; position: fixed; bottom: 40px; right: 10px; overflow: hidden; text-indent: 100%; white-space: nowrap; background: rgba(212, 27, 44, 100) url(../assets/placeholders/cd-top-arrow-16x16.svg) no-repeat center 50%; visibility: hidden; opacity: 0; -webkit-transition: opacity .3s 0s, visibility 0s .3s; -moz-transition: opacity .3s 0s, visibility 0s .3s; transition: opacity .3s 0s, visibility 0s .3s; }
 .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover { -webkit-transition: opacity .3s 0s, visibility 0s 0s; -moz-transition: opacity .3s 0s, visibility 0s 0s; transition: opacity .3s 0s, visibility 0s 0s; }
 .cd-top.cd-is-visible {    /* the button becomes visible */
 visibility: visible; opacity: 1; }
@@ -981,7 +981,7 @@ textarea {
 .section-break {
   position: relative;
   padding: 120px 20px;
-  background: linear-gradient(rgba(30, 28, 24, 0.8), rgba(30, 28, 24, 0.8)), url('../images/dora-header-raw.png') no-repeat center;
+  background: linear-gradient(rgba(30, 28, 24, 0.8), rgba(30, 28, 24, 0.8)), url('../assets/placeholders/missing-header-1900x350.svg') no-repeat center;
   background-size: cover;
   color: #fff;
   text-align: center;

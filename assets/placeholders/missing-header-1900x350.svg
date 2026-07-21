@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="350" viewBox="0 0 1900 350">
+<rect width="1900" height="350" fill="#f5f0e8" stroke="#b8a88f" stroke-width="4"/>
+<line x1="0" y1="0" x2="1900" y2="350" stroke="#b8a88f" stroke-width="3"/>
+<line x1="1900" y1="0" x2="0" y2="350" stroke="#b8a88f" stroke-width="3"/>
+<text x="950" y="175" font-family="Arial" font-size="29" fill="#6b5d4a" text-anchor="middle" dominant-baseline="middle">page header — 1900×350px</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="60" viewBox="0 0 150 60">
+<rect width="150" height="60" fill="#f5f0e8" stroke="#b8a88f" stroke-width="4"/>
+<line x1="0" y1="0" x2="150" y2="60" stroke="#b8a88f" stroke-width="3"/>
+<line x1="150" y1="0" x2="0" y2="60" stroke="#b8a88f" stroke-width="3"/>
+<text x="75" y="30" font-family="Arial" font-size="14" fill="#6b5d4a" text-anchor="middle" dominant-baseline="middle">sticky logo — 150×60px</text>
+</svg>

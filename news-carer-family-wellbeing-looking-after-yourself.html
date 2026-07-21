@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Family carers matter too. Practical wellbeing strategies for carers in Perth — respite, boundaries, guilt, and building a support network that truly lasts.">
+  <title>Looking After Yourself: Wellbeing for Family Carers | Dora Health &amp; Wellbeing</title>
+  <link rel="icon" type="image/png" href="assets/00-universal/00-brand-favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{gold:'#aa9144','gold-dk':'#8e7424',warm:'#f4f1ec',beige:'#eddba5',brand:'#1e1c18'},fontFamily:{sans:['Inter','sans-serif'],serif:['Playfair Display','serif']}}}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="css/dora.css" rel="stylesheet">
+  <script src="js/dora-motion.js?v=4" defer></script>
+</head>
+<body class="font-sans text-stone-700">
+<header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+
+      <!-- Logo + Brand Text -->
+      <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
+        <img src="assets/01-navbar/01-navbar-logo-150x150.png" alt="Dora Health & Wellbeing" class="h-12 w-auto">
+        <div class="hidden sm:block">
+          <div class="font-serif text-brand text-base font-semibold leading-tight">Dora Health</div>
+          <div class="text-xs text-gold tracking-wider uppercase">&amp; Wellbeing</div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-1" aria-label="Main navigation">
+        <a href="team.html" class="px-4 py-2 text-sm font-medium text-stone-700 hover:text-gold transition-colors">Team</a>
+
+        <!-- Services Dropdown -->
+        <div class="relative group">
+          <a href="services.html" class="px-4 py-2 text-sm font-medium text-stone-700 hover:text-gold transition-colors flex items-center gap-1">
+            Services <i class="fas fa-chevron-down text-xs"></i>
+          </a>
+          <div class="absolute top-full left-0 w-52 bg-white shadow-xl rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 mt-1">
+            <a href="services.html#everyday-support"  class="block px-4 py-2.5 text-sm text-stone-700 hover:bg-warm hover:text-gold">In-Home Support</a>
+            <a href="services.html#spinal-care"       class="block px-4 py-2.5 text-sm text-stone-700 hover:bg-warm hover:text-gold">Spinal Injury Care</a>
+            <a href="services.html#medication-mgmt"   class="block px-4 py-2.5 text-sm text-stone-700 hover:bg-warm hover:text-gold">Medication Management</a>
+            <a href="services.html#holistic-wellbeing" class="block px-4 py-2.5 text-sm text-stone-700 hover:bg-warm hover:text-gold">Mental Wellbeing</a>
+            <a href="services.html#wellness-care"     class="block px-4 py-2.5 text-sm text-stone-700 hover:bg-warm hover:text-gold">Personal Care</a>
+          </div>
+        </div>
+
+        <a href="testimonial.html" class="px-4 py-2 text-sm font-medium text-stone-700 hover:text-gold transition-colors">Testimonials</a>
+        <a href="blog.html" class="px-4 py-2 text-sm font-600 text-gold border-b-2 border-gold hover:text-gold transition-colors">News</a>
+        <a href="contact.html" class="ml-4 btn-gold text-sm py-2.5 px-6">Contact Us</a>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-btn" class="md:hidden p-2 rounded-lg text-stone-700 hover:bg-warm" aria-label="Open menu">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-menu" class="md:hidden bg-white border-t border-stone-100 px-4 pb-4">
+    <a href="team.html"        class="block py-3 text-sm text-stone-700 border-b border-stone-100">Team</a>
+    <a href="services.html"    class="block py-3 text-sm text-stone-700 border-b border-stone-100">Services</a>
+    <a href="testimonial.html" class="block py-3 text-sm text-stone-700 border-b border-stone-100">Testimonials</a>
+    <a href="blog.html" class="block py-3 text-sm text-stone-700 border-b border-stone-100">News</a>
+    <a href="contact.html"     class="block mt-4 btn-gold text-center text-sm">Contact Us</a>
+  </div>
+</header>
+<main class="pt-20">
+<section class="pattern-bg relative overflow-hidden">
+  <div class="absolute inset-0 bg-white/70"></div>
+  <div class="relative max-w-3xl mx-auto px-4 sm:px-6 py-16 text-center">
+    <span class="section-label">Health &amp; Wellbeing</span>
+    <h1 class="font-serif text-3xl md:text-5xl text-brand leading-tight mt-3">Looking After Yourself: Wellbeing for Family Carers</h1>
+  </div>
+</section>
+<article class="py-16 bg-white">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 dm-article">
+<p>Behind many people living with disability is a partner, parent, sibling or friend quietly doing an enormous amount — coordinating appointments, providing hands-on care, managing the mental load of it all. If that is you, this article is for you. Your wellbeing is not a luxury to attend to after everyone else is sorted. It is the foundation the whole arrangement rests on.</p><h2>The honest truth about carer strain</h2><p>Caring can be deeply meaningful and genuinely exhausting at the same time. Broken sleep, physical strain, reduced work hours, shrinking social circles and the constant low hum of responsibility all add up. Many carers do not notice the toll until they are well past their limits — partly because they never stop long enough to check.</p><h2>Practical ways to protect your wellbeing</h2><h3>Use respite without guilt</h3><p>Respite — whether a few hours a week of in-home support or longer planned breaks — is not abandonment. It is maintenance. The person you care for benefits from a rested, present version of you, and often values time with other people too. NDIS plans can fund supports that give family carers a genuine break; ask about it at the next plan review.</p><h3>Keep one thing that is yours</h3><p>A morning swim, a weekly coffee with friends, a hobby, exercise — protect at least one regular commitment that has nothing to do with caring. It anchors your identity beyond the caring role.</p><h3>Share the load deliberately</h3><p>Make a list of everything you do in a week. Then ask honestly: which of these could someone else do? Professional support workers can take on personal care, transfers, overnight support and transport — often the tasks that strain bodies and relationships the most. Handing over the physical tasks can give you back the relationship: partner instead of nurse, parent instead of coordinator.</p><h3>Watch your own health signals</h3><p>Persistent exhaustion, irritability, low mood, aches from lifting, or dreading each day are signals, not character flaws. Speak to your own GP — carers deserve healthcare too, and support is available. Carer support organisations in WA also offer counselling, peer groups and advice.</p><h2>Building an arrangement that lasts years, not months</h2><p>Sustainable care is a team sport. The strongest arrangements we see in Perth combine family love with professional support: family providing connection and continuity, trained workers providing skilled hands and reliable relief. Neither replaces the other.</p><h2>You are allowed to ask for help</h2><h2>The conversations worth having early</h2><p>Many carer arrangements drift into place during a crisis and are never consciously designed. It is worth sitting down — ideally before exhaustion forces the issue — and talking honestly as a family about what is sustainable. Which parts of care does the person want family involved in, and which would they genuinely prefer a professional to handle? Personal care in particular can strain relationships in both directions; plenty of people would rather a trained worker assist with showering so their partner remains simply their partner. These conversations can feel awkward, but they almost always land better as planning than as a breakdown response.</p><h2>Planning for the unexpected</h2><p>Every caring arrangement needs a what-if plan: what happens if you are suddenly unwell, injured or called away? Having a provider who already knows the person, their routines and their home means an emergency does not become a crisis. Some families build this in deliberately — a regular weekly shift with a professional team, even when family could technically cover it — precisely so backup is always warm, familiar and ready. Think of it as insurance that also happens to give you a night off.</p><p>Dora Health and Wellbeing works alongside families across Perth, providing in-home care and disability support that gives carers real, dependable breathing room. If you are running on empty — or would simply like to plan ahead before you get there — contact Dora for a warm, judgement-free chat about what support could look like.</p>
+  </div>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 mt-12 text-center">
+    <div class="bg-warm rounded-3xl p-8 border border-gold/15">
+      <h2 class="font-serif text-2xl text-brand mb-3">Talk to Us About Your Care</h2>
+      <p class="text-stone-500 text-sm mb-6">Our Perth-based team is happy to answer questions — no pressure, no obligation.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="contact.html" class="btn-gold">Contact Us</a>
+        <a href="blog.html" class="btn-outline-gold">More Articles</a>
+      </div>
+    </div>
+  </div>
+</article>
+</main>
+<footer class="bg-stone-900 text-stone-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+
+      <!-- Brand -->
+      <div>
+        <img src="assets/01-navbar/01-navbar-logo-150x150.png" alt="Dora Health & Wellbeing" class="h-12 mb-4 opacity-80">
+        <p class="text-sm leading-relaxed text-stone-400">Perth's In-Home Care Specialists.<br>Compassionate. Dignified. Personalised.</p>
+      </div>
+
+      <!-- Address -->
+      <div>
+        <h3 class="text-white font-semibold uppercase text-xs tracking-widest mb-4">Contact</h3>
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-start gap-2"><i class="fas fa-map-marker-alt text-gold mt-1"></i> 22B Chesterfield Avenue, Hocking WA</li>
+          <li class="flex items-center gap-2"><i class="fas fa-phone text-gold"></i> <a href="tel:0438335050" class="footer-link hover:text-gold">0438 335 050</a></li>
+          <li class="flex items-center gap-2"><i class="fas fa-envelope text-gold"></i> <a href="mailto:info@dorahealth.com.au" class="footer-link hover:text-gold">info@dorahealth.com.au</a></li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div>
+        <h3 class="text-white font-semibold uppercase text-xs tracking-widest mb-4">Follow Us</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="https://www.facebook.com/people/Dora-Health-Wellbeing/61577910100130/" target="_blank" rel="noopener" class="footer-link flex items-center gap-2 hover:text-gold"><i class="fab fa-facebook text-gold w-4"></i> Facebook</a></li>
+          <li><a href="https://www.instagram.com/dora_health/" target="_blank" rel="noopener" class="footer-link flex items-center gap-2 hover:text-gold"><i class="fab fa-instagram text-gold w-4"></i> Instagram</a></li>
+          <li><a href="#" class="footer-link flex items-center gap-2 hover:text-gold"><i class="fab fa-linkedin text-gold w-4"></i> LinkedIn</a></li>
+          <li><a href="https://maps.app.goo.gl/9Zp7y2n5u9vP9XqZA" target="_blank" class="footer-link flex items-center gap-2 hover:text-gold"><i class="fab fa-google text-gold w-4"></i> Google My Business</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-stone-700 pt-6 text-center text-xs text-stone-500 space-y-3">
+      <div>&copy; 2025 Dora Health and Wellbeing Pty Ltd &middot; ABN 71 684 687 901</div>
+      <div>Supporting NDIS participants (self-managed &amp; plan-managed) across Perth &amp; the South West</div>
+      <div class="flex justify-center items-center gap-2 flex-wrap">
+        <a href="privacy.html" class="hover:text-gold transition-colors">Privacy Policy</a><span>&middot;</span>
+        <a href="terms.html" class="hover:text-gold transition-colors">Terms of Service</a><span>&middot;</span>
+        <a href="blog.html" class="hover:text-gold transition-colors">News</a>
+        <a href="brand.html" aria-label="Dora brand kit" title="" class="ml-2 opacity-25 hover:opacity-80 transition-opacity"><img src="assets/00-universal/00-brand-icon-lotus-1563x1563.png" alt="" class="h-4 w-4 invert"></a>
+      </div>
+      <div class="pt-1">Site by <a href="#" class="font-semibold tracking-widest text-stone-400 hover:text-gold transition-colors" rel="noopener">TDC</a></div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('menu-btn').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
