@@ -57,29 +57,6 @@
     }
     .lotus-hero { animation: lotusPulse 5s ease-in-out infinite; }
 
-    /* ---- SVG stroke draw animation ---- */
-    .draw-svg path, .draw-svg circle, .draw-svg polyline,
-    .draw-svg line, .draw-svg rect, .draw-svg ellipse {
-      stroke-dasharray: 3000;
-      stroke-dashoffset: 3000;
-      transition: stroke-dashoffset 3s ease 0.2s;
-    }
-    .draw-svg.drawn path, .draw-svg.drawn circle,
-    .draw-svg.drawn polyline, .draw-svg.drawn line,
-    .draw-svg.drawn rect, .draw-svg.drawn ellipse {
-      stroke-dashoffset: 0;
-    }
-    /* PNG fallback — fade in on scroll */
-    .line-art-img {
-      opacity: 0;
-      transform: scale(0.96);
-      transition: opacity 1.4s ease 0.1s, transform 1.4s ease 0.1s;
-    }
-    .line-art-img.drawn {
-      opacity: 1;
-      transform: scale(1);
-    }
-
     /* ---- Section background line art overlay ---- */
     .section-line-bg {
       position: relative;
@@ -102,17 +79,6 @@
     .line-bg-lotus::after   { background-image: url('assets/00-universal/00-lineart-lotus-484x310.png'); background-size: 35%; background-position: center; }
     .line-bg-walk::after    { background-image: url('assets/00-universal/00-lineart-walkframe-1625x869.png'); background-position: left center; }
 
-    /* Illustration wrapper bubble */
-    .illus-wrapper { position: relative; display: flex; align-items: center; justify-content: center; }
-    .illus-wrapper::before {
-      content: '';
-      position: absolute;
-      width: 80%; height: 80%;
-      background: rgba(237,219,165,.22);
-      border-radius: 50%;
-      z-index: 0;
-    }
-    .illus-wrapper img { position: relative; z-index: 1; }
   </style>
 </head>
 
@@ -280,21 +246,16 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid md:grid-cols-2 gap-12 items-center">
 
-      <!-- Layered real-photo cluster -->
-      <div class="order-2 md:order-1 dm-cluster py-10" data-trace-style="gold-fine">
-        <img src="assets/04-passion/04-passion-photo-wheelchair-woman-1536x1024.png"
-             alt="Dora carer and participant — compassionate care at home"
-             class="dm-front w-[94%] rounded-3xl object-cover max-h-[460px]"
-             data-drift="up" data-speed="0.07" data-trace="care"
-             onerror="this.src='assets/04-passion/04-passion-photo-man-wheelchair-2048x2048.png'">
+      <!-- Real photos, even pair -->
+      <div class="order-2 md:order-1 grid grid-cols-2 gap-4">
+        <img src="assets/06-team/06-team-photo-georgina-notes-2186x1290.jpg"
+             alt="A Dora care plan written with the client, not for them"
+             class="w-full h-64 md:h-72 rounded-2xl shadow-soft object-cover object-center"
+             data-drift="up" data-speed="0.05">
         <img src="assets/04-passion/04-passion-photo-tea-visit-408x408.jpg"
              alt="A Dora visit over a cup of tea"
-             class="dm-back w-36 md:w-48 object-cover -top-2 right-0 rotate-3"
-             data-drift="down" data-speed="0.20">
-        <img src="assets/04-passion/04-passion-photo-tablet-345x345.jpg"
-             alt="Support worker and client planning together"
-             class="dm-back w-28 md:w-40 object-cover -bottom-2 -left-3 -rotate-2"
-             data-drift="down" data-speed="0.28">
+             class="w-full h-64 md:h-72 rounded-2xl shadow-soft object-cover object-center mt-8"
+             data-drift="up" data-speed="0.09">
       </div>
 
       <!-- Line art reveals on scroll, right side -->
@@ -309,13 +270,6 @@
         <p class="text-stone-500 leading-relaxed mb-8">
           Whether it's assistance with daily living or complex spinal injury management, our staff are hand-picked not just for their skills, but for their heart. We empower you to live the life you choose, in the place you love most: home.
         </p>
-        <!-- Animated line drawing that appears as if drawn on scroll -->
-        <div class="mb-6">
-          <img src="assets/04-passion/04-passion-illustration-assistwalking-2780x890.png"
-               alt="Dora line art — care support"
-               class="line-art-img h-24 opacity-0 mix-blend-multiply"
-               data-draw>
-        </div>
         <a href="team.html" class="btn-gold">Meet Our Team</a>
       </div>
     </div>
@@ -461,22 +415,20 @@
       <div class="grid grid-cols-2 gap-4">
         <img src="assets/06-team/06-team-photo-staff-polo-1440x1817.jpg"
              alt="Dora support worker in uniform"
-             class="rounded-2xl shadow-soft w-full h-52 object-cover object-center"
-             data-drift="left" data-speed="0.10" data-trace="lotus" data-trace-style="white-fine">
+             class="w-full h-64 md:h-72 rounded-2xl shadow-soft object-cover object-[center_30%]"
+             data-drift="up" data-speed="0.05">
         <img src="assets/06-team/06-team-photo-george-thea-1440x1798.jpg"
              alt="George and Thea, Dora founders"
-             class="rounded-2xl shadow-soft w-full h-52 object-cover object-center mt-6"
-             data-drift="left" data-speed="0.16"
-             onerror="this.src='assets/06-team/06-team-illustration-thea-george-1536x2048.png'">
+             class="w-full h-64 md:h-72 rounded-2xl shadow-soft object-cover object-[center_25%] mt-8"
+             data-drift="up" data-speed="0.09">
         <img src="assets/06-team/06-team-photo-george-karl-1440x1702.jpg"
-             alt="Dora team member"
-             class="rounded-2xl shadow-soft w-full h-52 object-cover object-center"
-             data-drift="left" data-speed="0.22">
+             alt="George from Dora Health &amp; Wellbeing"
+             class="w-full h-64 md:h-72 rounded-2xl shadow-soft object-cover object-[center_30%]"
+             data-drift="up" data-speed="0.05">
         <img src="assets/06-team/06-team-photo-trio-1440x1791.jpg"
              alt="Dora team George, Thea and Andrew"
-             class="rounded-2xl shadow-soft w-full h-52 object-cover object-center mt-6"
-             data-drift="left" data-speed="0.28"
-             onerror="this.src='assets/06-team/06-team-photo-trio-colour-1440x1791.png'">
+             class="w-full h-64 md:h-72 rounded-2xl shadow-soft object-cover object-[center_25%] mt-8"
+             data-drift="up" data-speed="0.09">
       </div>
 
     </div>
@@ -507,17 +459,15 @@
         <a href="services.html" class="btn-gold">Our Services</a>
       </div>
 
-      <div class="illus-wrapper p-8 dm-cluster" data-trace-style="dark-soft">
+      <div class="grid grid-cols-2 gap-4">
         <img src="assets/06-team/06-team-photo-staff-planning-2048x1537.jpg"
              alt="The Dora team planning client care together"
-             class="dm-front w-full max-w-md rounded-3xl object-cover"
-             data-drift="up" data-speed="0.09" data-trace="sun"
-             onerror="this.src='assets/07-about/07-about-illustration-trio-1024x1536.png'">
-        <img src="assets/07-about/07-about-illustration-trio-1024x1536.png"
-             alt="" aria-hidden="true"
-             class="dm-back w-40 md:w-52 -bottom-6 -left-4 !shadow-none"
-             style="filter: brightness(.8) contrast(1.05);"
-             data-drift="down" data-speed="0.24">
+             class="w-full h-64 md:h-72 rounded-2xl shadow-soft object-cover object-center"
+             data-drift="up" data-speed="0.05">
+        <img src="assets/07-about/07-about-photo-event-booth-1440x1440.jpg"
+             alt="Dora at a Perth community event"
+             class="w-full h-64 md:h-72 rounded-2xl shadow-soft object-cover object-center mt-8"
+             data-drift="up" data-speed="0.09">
       </div>
     </div>
 
@@ -551,17 +501,15 @@
     <div class="grid md:grid-cols-2 gap-12 items-center">
 
       <!-- Real community photos, left side -->
-      <div class="order-2 md:order-1 grid grid-cols-2 gap-4 items-stretch">
+      <div class="order-2 md:order-1 grid grid-cols-2 gap-4">
         <img src="assets/08-community/08-community-photo-beach-wheelchair-1284x1712.jpg"
              alt="Beach wheelchair at the shoreline — accessible days out"
-             class="w-full h-full rounded-3xl shadow-soft object-cover max-h-[440px]"
-             data-drift="down" data-speed="0.10" data-trace="wave" data-trace-style="white-bold"
-             onerror="this.src='assets/08-community/08-community-photo-walkframe-1536x1024.png'">
+             class="w-full h-64 md:h-72 rounded-2xl shadow-soft object-cover object-center"
+             data-drift="up" data-speed="0.05">
         <img src="assets/08-community/08-community-photo-sauna-access-1440x1914.jpg"
              alt="Dora participant visiting an accessible sauna"
-             class="w-full h-full rounded-3xl shadow-soft object-cover max-h-[440px] mt-8"
-             data-drift="down" data-speed="0.20" data-trace="leaf" data-trace-style="white-fine"
-             onerror="this.src='assets/08-community/08-community-photo-group-1536x1024.png'">
+             class="w-full h-64 md:h-72 rounded-2xl shadow-soft object-cover object-center mt-8"
+             data-drift="up" data-speed="0.09">
       </div>
 
       <div class="order-1 md:order-2">
@@ -753,16 +701,6 @@
     });
   });
 
-  // Intersection Observer — scroll-triggered line art "drawn" animation
-  const drawObs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('drawn');
-        drawObs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.3 });
-  document.querySelectorAll('[data-draw]').forEach(el => drawObs.observe(el));
 </script>
 
 </body>
