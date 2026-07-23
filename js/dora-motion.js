@@ -107,6 +107,28 @@
     });
   }
 
+  /* ---------- 5a. Slow scroll zoom inside photo frames ---------- */
+  /* The image starts a touch oversized and relaxes to its true size as the
+     frame rises through the viewport — movement you feel more than see. */
+  var zoomers = [];
+  onReady(function () {
+    document.querySelectorAll('.dm-frame').forEach(function (f) {
+      var img = f.querySelector('img');
+      if (img) zoomers.push({ frame: f, img: img });
+    });
+  });
+  function zoomTick() {
+    if (reduceMotion) return;
+    var vh = window.innerHeight;
+    zoomers.forEach(function (z) {
+      var r = z.frame.getBoundingClientRect();
+      if (r.bottom < -100 || r.top > vh + 100) return;
+      // p: 0 while low in the viewport → 1 once it has risen past the top third
+      var p = 1 - Math.min(Math.max((r.top + r.height * 0.5) / vh, 0), 1);
+      z.img.style.setProperty('--dm-zoom', (1.065 - 0.065 * p).toFixed(4));
+    });
+  }
+
   /* ---------- 5b. Soft section edges ---------- */
   /* Each section fades in from whatever colour sat above it, so the
      boundary between two background colours is a blend, not a hard line. */
@@ -245,6 +267,7 @@
     var y = window.scrollY || 0;
     navTick(y);
     driftTick();
+    zoomTick();
     gradTick();
     revealTick();
     if (topDot) topDot.classList.toggle('dm-top-visible', y > 600);
