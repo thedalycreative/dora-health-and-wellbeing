@@ -107,6 +107,22 @@
     });
   }
 
+  /* ---------- 5b. Soft section edges ---------- */
+  /* Each section fades in from whatever colour sat above it, so the
+     boundary between two background colours is a blend, not a hard line. */
+  onReady(function () {
+    document.querySelectorAll('main > section').forEach(function (sec) {
+      var prev = sec.previousElementSibling;
+      if (!prev || prev.tagName !== 'SECTION') return;
+      // a section's own bg may be transparent (pattern image) — walk its
+      // overlay children for the colour actually painted at the boundary.
+      var c = getComputedStyle(prev).backgroundColor;
+      if (!c || c === 'transparent' || /rgba\(0, 0, 0, 0\)/.test(c)) return;
+      sec.style.setProperty('--dm-prev', c);
+      sec.classList.add('dm-soft-top');
+    });
+  });
+
   /* ---------- 6. Scroll-strengthening section gradients ---------- */
   /* .dm-gradient-top fades FROM the previous section colour; the fade
      strengthens as the section enters the viewport (via --dm-grad). */

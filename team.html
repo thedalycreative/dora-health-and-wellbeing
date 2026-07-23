@@ -25,15 +25,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="css/dora.css" rel="stylesheet">
-  <script src="js/dora-motion.js?v=4" defer></script>
+  <link href="css/dora.css?v=7" rel="stylesheet">
+  <script src="js/dora-motion.js?v=7" defer></script>
   <style>
     @keyframes floatUp { 0%{transform:translateY(0)} 50%{transform:translateY(-12px)} 100%{transform:translateY(0)} }
     .float-anim   { animation: floatUp 6s ease-in-out infinite; }
     .float-anim-2 { animation: floatUp 7s ease-in-out 1s infinite; }
-    .illus-wrapper { position:relative; display:flex; align-items:center; justify-content:center; }
-    .illus-wrapper::before { content:''; position:absolute; width:85%; height:85%; background:rgba(237,219,165,.2); border-radius:50%; z-index:0; }
-    .illus-wrapper img { position:relative; z-index:1; }
     @keyframes gradientShift {
       0%   { background-position: 0% 50%; }
       50%  { background-position: 100% 50%; }
@@ -100,15 +97,8 @@
         </p>
         <a href="#team-grid" class="btn-outline-gold text-sm">Meet Everyone</a>
       </div>
-      <div class="dm-hero-right flex justify-center items-center">
-        <div class="relative">
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="w-64 h-64 md:w-[380px] md:h-[380px] bg-beige/40 rounded-full blur-2xl"></div>
-          </div>
-          <img src="assets/06-team/06-team-photo-trio-colour-1440x1791.png"
-               alt="The Dora Health & Wellbeing team"
-               class="relative z-10 rounded-3xl shadow-soft object-cover object-center w-72 md:w-96 max-h-[440px]">
-        </div>
+      <div class="dm-hero-right dm-hero-art">
+        <img src="assets/00-universal/00-lineart-bedside-lean-1024x1024.png" alt="A Dora carer at a client&rsquo;s bedside — line illustration">
       </div>
     </div>
   </div>
@@ -133,21 +123,11 @@
     <div class="grid md:grid-cols-5 gap-12 items-start">
 
       <!-- Photo -->
-      <div class="md:col-span-2 dm-cluster" data-trace-style="gold-fine">
-        <div class="relative overflow-hidden rounded-3xl shadow-soft" data-drift="up" data-speed="0.06" data-trace="lotus">
-          <img src="assets/06-team/06-team-photo-trio-1440x1791.jpg"
-               alt="George, Founder of Dora Health & Wellbeing, with family"
-               class="w-full object-cover object-center max-h-[560px]"
-               onerror="this.src='assets/06-team/06-team-photo-wedding-1440x1800.jpg'">
-          <!-- Subtle illustration watermark -->
-          <img src="assets/00-universal/00-lineart-lotus-484x310.png"
-               alt="" aria-hidden="true"
-               class="absolute bottom-4 right-4 h-24 opacity-15 mix-blend-multiply pointer-events-none select-none">
-        </div>
-        <img src="assets/06-team/06-team-photo-georgina-notes-2186x1290.jpg"
-             alt="Georgina preparing a care plan"
-             class="dm-back w-40 md:w-56 object-cover rounded-2xl -right-6 md:-right-14 top-24 rotate-2 z-10"
-             data-drift="down" data-speed="0.34">
+      <div class="md:col-span-2">
+        <img src="assets/06-team/06-team-photo-trio-1440x1791.jpg"
+             alt="George, founder of Dora Health &amp; Wellbeing, with family"
+             class="w-full h-64 md:h-72 rounded-2xl shadow-soft object-cover object-center"
+             data-drift="up" data-speed="0.05">
         <div class="mt-4 bg-warm rounded-2xl p-5 text-center">
           <div class="font-serif text-xl text-brand font-semibold">George</div>
           <div class="text-gold text-sm font-medium mt-0.5">Founder &amp; Director</div>
@@ -196,8 +176,20 @@
 
       <div class="bg-white rounded-2xl overflow-hidden shadow-soft">
         <div class="h-64">
+          <img src="assets/06-team/06-team-photo-nurse-scrubs-414x414.jpg"
+               alt="Georgina — Dora Health &amp; Wellbeing"
+               class="w-full h-full object-cover object-center">
+        </div>
+        <div class="p-5">
+          <div class="font-serif text-lg text-brand font-semibold">Georgina</div>
+          <div class="text-gold text-sm">Care Coordinator &middot; Client Relations &amp; Planning</div>
+          <p class="text-stone-500 text-xs mt-2 leading-relaxed">Ensuring every care plan is tailored, thoughtful and exceeds expectations.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl overflow-hidden shadow-soft">
+        <div class="h-64">
           <img src="assets/06-team/06-team-photo-staff-polo-1440x1817.jpg"
-               alt="Meg — Dora In-Home Support Specialist"
+               alt="Meg — Dora Health &amp; Wellbeing"
                class="w-full h-full object-cover object-[center_30%]">
         </div>
         <div class="p-5">
@@ -206,59 +198,6 @@
           <p class="text-stone-500 text-xs mt-2 leading-relaxed">Providing compassionate daily living support with professionalism and warmth.</p>
         </div>
       </div>
-
-      <div class="bg-white rounded-2xl overflow-hidden shadow-soft">
-        <div class="h-64">
-          <img src="assets/06-team/06-team-photo-george-thea-1440x1798.jpg"
-               alt="Georgina — Dora Care Coordinator"
-               class="w-full h-full object-cover object-[center_25%]">
-        </div>
-        <div class="p-5">
-          <div class="font-serif text-lg text-brand font-semibold">Georgina</div>
-          <div class="text-gold text-sm">Care Coordinator &middot; Client Relations &amp; Planning</div>
-          <p class="text-stone-500 text-xs mt-2 leading-relaxed">Ensuring every care plan is tailored, thoughtful and exceeds expectations.</p>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-2xl overflow-hidden shadow-soft">
-        <div class="h-64">
-          <img src="assets/06-team/06-team-photo-nurse-scrubs-414x414.jpg"
-               alt="Dora clinical support nurse"
-               class="w-full h-full object-cover object-center">
-        </div>
-        <div class="p-5">
-          <div class="font-serif text-lg text-brand font-semibold">Clinical Support</div>
-          <div class="text-gold text-sm">Spinal &amp; Complex Care</div>
-          <p class="text-stone-500 text-xs mt-2 leading-relaxed">Specialist expertise in complex and high-needs disability support.</p>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-2xl overflow-hidden shadow-soft">
-        <div class="h-64">
-          <img src="assets/06-team/06-team-photo-andrew-suit-1165x1323.png"
-               alt="Andrew — Dora Manager"
-               class="w-full h-full object-cover object-[center_25%]">
-        </div>
-        <div class="p-5">
-          <div class="font-serif text-lg text-brand font-semibold">Andrew</div>
-          <div class="text-gold text-sm">Manager</div>
-          <p class="text-stone-500 text-xs mt-2 leading-relaxed">Leading day-to-day operations and making sure every client receives the care Dora promises.</p>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-2xl overflow-hidden shadow-soft">
-        <div class="h-64">
-          <img src="assets/06-team/06-team-photo-sam-414x414.jpg"
-               alt="Sam — Dora Wellness Support"
-               class="w-full h-full object-cover object-[center_25%]">
-        </div>
-        <div class="p-5">
-          <div class="font-serif text-lg text-brand font-semibold">Sam</div>
-          <div class="text-gold text-sm">Wellness Support &middot; Personal Care</div>
-          <p class="text-stone-500 text-xs mt-2 leading-relaxed">Delivering personal care with warmth, respect and genuine connection.</p>
-        </div>
-      </div>
-
       <div class="bg-white rounded-2xl overflow-hidden shadow-soft">
         <div class="h-64 bg-brand flex items-center justify-center">
           <span class="font-serif text-7xl text-gold">C</span>
@@ -269,15 +208,28 @@
           <p class="text-stone-500 text-xs mt-2 leading-relaxed">Keeping Dora accountable, compliant and sustainable so care always comes first.</p>
         </div>
       </div>
-
       <div class="bg-white rounded-2xl overflow-hidden shadow-soft">
-        <div class="h-64 bg-brand flex items-center justify-center">
-          <span class="font-serif text-7xl text-gold">T</span>
+        <div class="h-64">
+          <img src="assets/06-team/06-team-photo-sam-414x414.jpg"
+               alt="Andrew — Dora Health &amp; Wellbeing"
+               class="w-full h-full object-cover object-[center_25%]">
         </div>
         <div class="p-5">
-          <div class="font-serif text-lg text-brand font-semibold">Timothy</div>
-          <div class="text-gold text-sm">Creative Director &middot; Branding &amp; Marketing</div>
-          <p class="text-stone-500 text-xs mt-2 leading-relaxed">Shaping the Dora brand and telling the stories of the people we support.</p>
+          <div class="font-serif text-lg text-brand font-semibold">Andrew</div>
+          <div class="text-gold text-sm">Manager</div>
+          <p class="text-stone-500 text-xs mt-2 leading-relaxed">Leading day-to-day operations and making sure every client receives the care Dora promises.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl overflow-hidden shadow-soft">
+        <div class="h-64">
+          <img src="assets/06-team/06-team-photo-andrew-suit-1165x1323.png"
+               alt="Sam — Dora Health &amp; Wellbeing"
+               class="w-full h-full object-cover object-[center_25%]">
+        </div>
+        <div class="p-5">
+          <div class="font-serif text-lg text-brand font-semibold">Sam</div>
+          <div class="text-gold text-sm">Wellness Support &middot; Personal Care</div>
+          <p class="text-stone-500 text-xs mt-2 leading-relaxed">Delivering personal care with warmth, respect and genuine connection.</p>
         </div>
       </div>
 

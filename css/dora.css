@@ -380,3 +380,50 @@ svg.dm-draw.dm-drawn path { stroke-dashoffset: 0 !important; }
 .dm-section-illus { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
 .dm-section-illus img { position: absolute; right: -4%; top: 50%; transform: translateY(-50%); height: 110%; opacity: .12; }
 .dm-section-illus::after { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,.72); }
+
+/* ============================================================
+   HERO ILLUSTRATION — bold line-art PNG, golden glow, faint pulse
+   Markup: <div class="dm-hero-art"><img src="…lineart….png"></div>
+============================================================ */
+.dm-hero-art { position: relative; display: flex; align-items: center; justify-content: center; }
+.dm-hero-art::before {                       /* warm glow lifts art off the pattern */
+  content: '';
+  position: absolute; top: 50%; left: 50%;
+  width: clamp(220px, 30vw, 400px); aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(170,145,68,.30) 0%, rgba(237,219,165,.20) 45%, rgba(237,219,165,0) 72%);
+  border-radius: 50%;
+  filter: blur(6px);
+  pointer-events: none;
+}
+.dm-hero-art img {
+  position: relative; z-index: 1;
+  /* cap BOTH axes so tall portrait art and wide landscape art land at a
+     similar visual weight in the hero */
+  width: auto; height: auto;
+  max-width: min(100%, 420px);
+  max-height: clamp(260px, 46vh, 440px);
+  animation: dmHeroBreathe 9s ease-in-out infinite;
+}
+/* barely-there breath — a few pixels over nine seconds */
+/* contrast lifts the thin source strokes to a bold, clean black */
+@keyframes dmHeroBreathe {
+  0%, 100% { transform: scale(1);     filter: contrast(1.6) drop-shadow(0 10px 26px rgba(60,50,30,.16)); }
+  50%      { transform: scale(1.012); filter: contrast(1.6) drop-shadow(0 12px 32px rgba(60,50,30,.20)); }
+}
+@media (prefers-reduced-motion: reduce) { .dm-hero-art img { animation: none; } }
+
+/* ============================================================
+   SOFT SECTION EDGES — blends each section into the one above.
+   dora-motion.js reads the previous section's background colour
+   into --dm-prev; the fade sits inside the section's top padding.
+============================================================ */
+.dm-soft-top { position: relative; }
+.dm-soft-top::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: clamp(36px, 6vh, 72px);
+  background: linear-gradient(to bottom, var(--dm-prev, transparent), transparent);
+  pointer-events: none;
+  z-index: 2;
+}
